@@ -23,5 +23,5 @@ module.exports = {
 ```
 Then run this command.
 ```sh
-npm run next-rss
+npx next-rss
 ```
