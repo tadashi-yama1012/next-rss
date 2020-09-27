@@ -23,5 +23,9 @@
   "dependencies": {
     "@corex/deepmerge": "^2.4.14",
     "feed": "^4.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tadashi-yama1012/next-rss.git"
   }
 }
