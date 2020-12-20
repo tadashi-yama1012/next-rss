@@ -10,7 +10,7 @@ export const getRuntimePaths = (config: IConfig): IRuntimePaths => {
         BUILD_MANIFEST: getPath(config.sourceDir!, 'build-manifest.json'),
         PRERENDER_MANIFEST: getPath(config.sourceDir!, 'prerender-manifest.json'),
         EXPORT_MARKER: getPath(config.sourceDir!, 'export-marker.json'),
-        POST_DIR: getPath(config.sourceDir!, 'server', 'pages', 'posts'),
+        POST_DIR: getPath(config.sourceDir!, 'server', 'pages', config.postsDir!),
         RSS_FILE: getPath(config.outDir!, 'rss.xml'),
         ATOM_FILE: getPath(config.outDir!, 'atom.xml')
     };

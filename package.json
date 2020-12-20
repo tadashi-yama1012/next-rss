@@ -11,7 +11,10 @@
   "bin": {
     "next-rss": "./bin/next-rss"
   },
-  "keywords": ["nextjs", "rss"],
+  "keywords": [
+    "nextjs",
+    "rss"
+  ],
   "author": "Tadashi Yamazaki",
   "license": "MIT",
   "devDependencies": {
