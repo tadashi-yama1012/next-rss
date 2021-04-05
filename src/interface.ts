@@ -8,6 +8,7 @@ export interface IConfig {
     outDir?: string
     exclude?: string[]
     postsDir?: string
+    transform?: (post: any) => IPostsType
 }
 
 export interface IRuntimePaths {
@@ -49,5 +50,5 @@ export interface IPostsType {
 export interface INextManifest {
     build: IBuildManifest
     preRender?: IPreRenderManifest
-    posts?: IPostsType[]
+    posts?: any[]
 }

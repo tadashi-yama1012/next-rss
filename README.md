@@ -19,6 +19,7 @@ module.exports = {
     siteUrl: 'http://example.com',
     outDir: 'public',
     postsDir: 'posts',
+    transform: (post) => IPostsType,
 }
 ```
 Then run this command.

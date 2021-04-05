@@ -14,6 +14,8 @@ export const createFeedSet = (
         copyright: config.siteCopyright
     });
     manifest.posts?.forEach((post) => {
+        if (config.transform) post = config.transform(post);
+
         feed.addItem({
             title: post.pageProps.postData.title,
             id: `${config.siteUrl}/${config.postsDir}/${post.pageProps.postData.id}`,
